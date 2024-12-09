@@ -24,9 +24,6 @@ public class ProdutoEntity {
     @Column(name = "unidades_em_estoque")
     private Integer unidadesEmEstoque;
 
-    @Column(name = "imagem_principal")
-    private String imagemUrl;
-
     @Column(name = "data_criacao")
     @CreationTimestamp
     private Date dataCriacao;
@@ -47,14 +44,13 @@ public class ProdutoEntity {
     public ProdutoEntity() { }
 
     public ProdutoEntity(Long id, String nome, String descricao, BigDecimal preco,
-                         Integer unidadesEmEstoque, String imagemUrl, Date dataCriacao,
+                         Integer unidadesEmEstoque, Date dataCriacao,
                          Date ultimaAtualizacao, boolean ativo) {
         this.id = id;
         this.nome = nome;
         this.descricao = descricao;
         this.preco = preco;
         this.unidadesEmEstoque = unidadesEmEstoque;
-        this.imagemUrl = imagemUrl;
         this.dataCriacao = dataCriacao;
         this.ultimaAtualizacao = ultimaAtualizacao;
         this.ativo = ativo;
@@ -98,14 +94,6 @@ public class ProdutoEntity {
 
     public void setUnidadesEmEstoque(Integer unidadesEmEstoque) {
         this.unidadesEmEstoque = unidadesEmEstoque;
-    }
-
-    public String getImagemUrl() {
-        return imagemUrl;
-    }
-
-    public void setImagemUrl(String imagemUrl) {
-        this.imagemUrl = imagemUrl;
     }
 
     public Date getDataCriacao() {

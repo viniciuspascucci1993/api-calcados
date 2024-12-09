@@ -13,7 +13,6 @@ public class ProdutoDTO {
     private String descricao;
     private BigDecimal preco;
     private Integer unidadesEmEstoque;
-    private String imagemUrl;
 
     private Date dataCriacao;
 
@@ -24,14 +23,13 @@ public class ProdutoDTO {
     public ProdutoDTO() { }
 
     public ProdutoDTO(Long id, String nome, String descricao, BigDecimal preco, Integer unidadesEmEstoque,
-                      String imagemUrl, Date dataCriacao, Date ultimaAtualizacao,
+                      Date dataCriacao, Date ultimaAtualizacao,
                       boolean ativo) {
         this.id = id;
         this.nome = nome;
         this.descricao = descricao;
         this.preco = preco;
         this.unidadesEmEstoque = unidadesEmEstoque;
-        this.imagemUrl = imagemUrl;
         this.dataCriacao = dataCriacao;
         this.ultimaAtualizacao = ultimaAtualizacao;
         this.ativo = ativo;
@@ -75,14 +73,6 @@ public class ProdutoDTO {
 
     public void setUnidadesEmEstoque(Integer unidadesEmEstoque) {
         this.unidadesEmEstoque = unidadesEmEstoque;
-    }
-
-    public String getImagemUrl() {
-        return imagemUrl;
-    }
-
-    public void setImagemUrl(String imagemUrl) {
-        this.imagemUrl = imagemUrl;
     }
 
     public Date getDataCriacao() {

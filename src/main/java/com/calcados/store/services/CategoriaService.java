@@ -143,7 +143,6 @@ public class CategoriaService {
                         produtoDTO.getDescricao(),
                         produtoDTO.getPreco(),
                         produtoDTO.getUnidadesEmEstoque(),
-                        produtoDTO.getImagemUrl(),
                         produtoDTO.getDataCriacao(),
                         produtoDTO.getUltimaAtualizacao(),
                         produtoDTO.isAtivo()
@@ -163,7 +162,6 @@ public class CategoriaService {
                         produto.getDescricao(),
                         produto.getPreco(),
                         produto.getUnidadesEmEstoque(),
-                        produto.getImagemUrl(),
                         produto.getDataCriacao(),
                         produto.getUltimaAtualizacao(),
                         produto.isAtivo()
@@ -182,7 +180,7 @@ public class CategoriaService {
 
     private ProdutoDTO toProdutoDTO(ProdutoEntity produto) {
         return new ProdutoDTO(produto.getId(), produto.getNome(), produto.getDescricao(),
-                produto.getPreco(), produto.getUnidadesEmEstoque(), produto.getImagemUrl(), produto.getDataCriacao(),
+                produto.getPreco(), produto.getUnidadesEmEstoque(), produto.getDataCriacao(),
                 produto.getUltimaAtualizacao(), produto.isAtivo());
     }
 }

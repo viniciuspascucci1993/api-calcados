@@ -26,7 +26,6 @@ public class ProdutoService {
         produtoDTO.setDescricao(entity.getDescricao());
         produtoDTO.setPreco(entity.getPreco());
         produtoDTO.setUnidadesEmEstoque(entity.getUnidadesEmEstoque());
-        produtoDTO.setImagemUrl(entity.getImagemUrl());
         produtoDTO.setDataCriacao(entity.getDataCriacao());
         produtoDTO.setUltimaAtualizacao(entity.getUltimaAtualizacao());
         produtoDTO.setAtivo(entity.isAtivo());
